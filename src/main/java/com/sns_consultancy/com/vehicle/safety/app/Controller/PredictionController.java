@@ -1,7 +1,8 @@
 package com.sns_consultancy.com.vehicle.safety.app.Controller;
 
-import com.sns_consultancy.com.vehicle.safety.app.Repository.PredictionResultRepository;
+
 import com.sns_consultancy.com.vehicle.safety.app.Model.PredictionResult;
+import com.sns_consultancy.com.vehicle.safety.app.Repository.PredictionResultRepository;
 import com.sns_consultancy.com.vehicle.safety.app.Request.MLInferenceService;
 
 import org.springframework.beans.factory.annotation.Autowired;

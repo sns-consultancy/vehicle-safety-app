@@ -1,8 +1,7 @@
 package com.sns_consultancy.com.vehicle.safety.app.Controller;
 
-
-import com.sns_consultancy.com.vehicle.safety.app.Model.SensorData;
 import com.sns_consultancy.com.vehicle.safety.app.Repository.SensorDataRepository;
+import com.sns_consultancy.com.vehicle.safety.app.Model.SensorData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -33,6 +32,7 @@ public class SensorDataController {
         repo.save(data);
         return ResponseEntity.ok("Vehicle data saved.");
     }
+// ...existing code...
 
     @PostMapping("/flight")
     public ResponseEntity<?> ingestFlight(@RequestBody SensorData data) {
@@ -41,4 +41,5 @@ public class SensorDataController {
         repo.save(data);
         return ResponseEntity.ok("Flight data saved.");
     }
-}
+} // <-- Add this closing brace
+
